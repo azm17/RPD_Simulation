@@ -26,9 +26,10 @@ int main(int argc, char *argv[]){
     double stage_payoff_x, stage_payoff_y;// paypff per stage game
     double T = 1.5, R = 1.0, P = 0.0, S = -0.5;
     double rnd_x, rnd_y;
-    int t_max = 100000;
+    // int t_max = 100000;
+    int t_max = 10000000;
     int state;
-    int i_max = 1000;
+    int i_max = 20;
     
     for (int i=0; i < i_max; i++){
         for (int j=0; j<5; j++) q[j] = Uniform();// Change Y's strategy
