@@ -2,8 +2,8 @@ import subprocess
 
 # subprocess.run(["./a.out"])
 
-cmd = ["./a.out"] + ["0","0","0","0","0"]
-
+# cmd = ["./a.out"] + ["0","0","0","0","0"]
+cmd = ["a.exe"] + ["0","0","0","0","0"]
 proc = subprocess.run(cmd, stdout = subprocess.PIPE, stderr = subprocess.PIPE)
 # print(proc.stdout.decode("utf8").split('\n')[:-1])
 
